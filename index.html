@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/305fd59af1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Accueil-ohmyfood</title>
 </head>
 
 <body>
-    <div class="Accueil_page">
-        <img src="logo/ohmyfood@2x.svg" alt="logo du site ohmyfood">
-    </div>
+    <header>
+        <h1 class="header_logo">ohmyfood</h1>
+    </header>
+
     <main class="Contenu">
-        <header>
-            <img src="logo/ohmyfood@2x.svg" alt="logo du site ohmyfood">
-        </header>
         <section class="MenuAccueil">
             <div class="reservation_local">
                 <div class="reservation_local--fas"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
-                <span>Paris,Belleville</span>
+                <span>Paris, Belleville</span>
             </div>
             <h3>Réservez le menu qui <br> vous convient</h3>
             <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
             <button class="btn">Explorer nos restaurants</button>
-            <div class="Fonction">
-                <div class="FonctionTitre">Fonctionnement</div>
+        </section>
+           
+        <div class="FonctionTitre">Fonctionnement</div>
+            <div class="container">
                 <div class="Fonction_Block">
                     <span class="Fonction_Block--numero">1</span>
                     <div class="Fonction_Block--icone"><i class="fas fa-mobile-alt"></i></div>
-                    <div class="Fonction_Block--Titre">Choisissez un restaurant</div>
+                    <div class="Fonction_Block--Titre"><span>Choisissez un restaurant</span></div>
                 </div>
-            </div>
-            <div class="Fonction">
+
+
                 <div class="Fonction_Block">
                     <span class="Fonction_Block--numero">2</span>
                     <div class="Fonction_Block--icone"><i class="fas fa-list-ul"></i></div>
                     <div class="Fonction_Block--Titre">Composez votre menu</div>
                 </div>
-            </div>
-            <div class="Fonction">
+
+
                 <div class="Fonction_Block">
                     <span class="Fonction_Block--numero">3</span>
                     <div class="Fonction_Block--icone"><i class="fas fa-store"></i></div>
                     <div class="Fonction_Block--Titre">Dégustez au restaurant</div>
                 </div>
             </div>
-        </section>
+
         <section class="Restaurants">
             <div class="Restaurants--Titre">Restaurants</div>
             <a class="Carte1" href="lapalettedugoutmenu.html">
                 <div class="Restaurants_Carte">
                     <img class="Restaurants_Carte--img" src="images/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                        alt="la-palette-du-gout" />
+                        alt="la-palette-du-gout" />  
                     <div class="Restaurants_Carte--tag">Nouveau</div>
                     <div class="Restaurants_Carte--Texte">
                         <h2><strong>La palette du goût</strong></h2>
                         <p>Ménilmontant</p>
                         <div class="Restaurants_Carte--Coeur"><i class="far fa-heart"></i></div>
-                        <div class="Restaurants_Coeur--animation"><i class="fas fa-heart fa-gradient"></i></div>
                     </div>
                 </div>
             </a>
@@ -70,7 +75,6 @@
                         <h2><strong>La note enchantée</strong></h2>
                         <p>Charonne</p>
                         <div class="Restaurants_Carte--Coeur"><i class="far fa-heart"></i></div>
-                        <div class="Restaurants_Coeur--animation"><i class="fas fa-heart fa-gradient"></i></div>
                     </div>
                 </div>
             </a>
@@ -83,7 +87,6 @@
                         <h2><strong>A la française</strong></h2>
                         <p>Cité Rouge</p>
                         <div class="Restaurants_Carte--Coeur"><i class="far fa-heart"></i></div>
-                        <div class="Restaurants_Coeur--animation"><i class="fas fa-heart fa-gradient"></i></div>
                     </div>
                 </div>
             </a>
@@ -95,14 +98,13 @@
                         <h2><strong>Le délice des sens</strong></h2>
                         <p>Folie-Ménicourt</p>
                         <div class="Restaurants_Carte--Coeur"><i class="far fa-heart"></i></div>
-                        <div class="Restaurants_Coeur--animation"><i class="fas fa-heart fa-gradient"></i></div>
                     </div>
                 </div>
             </a>
         </section>
     </main>
     <footer>
-        <img class="Footerlogo" src="logo/ohmyfood@2x.svg" alt="logo du site ohmyfood" />
+        <h1 class="footer_logo">ohmyfood</h1>
         <div class="Footer_Menu">
             <i class="fas fa-utensils whiteicon"></i>
             <a href="#">
@@ -114,15 +116,15 @@
             <a href="#">
                 <h4>Devenir partenaire</h4>
             </a>
-        </div>
-        <ul>
-            <li><a href="#">
-                    <h4>Mentions légales</h4>
-                </a></li>
-            <li><a href="#">
-                    <h4>Contact</h4>
-                </a></li>
-        </ul>
+        </div> 
+        <div class="Footer_Mention">
+        <a href="#">
+            <h4>Mentions légales</h4>
+        </a>
+        <a href="#">
+            <h4>Contact</h4>
+        </a>
+    </div>
     </footer>
 </body>
 

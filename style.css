@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+}
+h2 {
+    color: black;
+    font-weight: 900;
+    margin: 0;
+}
+h3 {
+    font-weight: 900;
+}
+h4 {
+    margin: 0;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+p { 
+    color: black;
+}
+.fa-utensils {
+    color: white;
+    padding-right: 0.8rem;
+}
+.fa-hands-helping {
+    color: white;
+    padding-right: 0.3rem;
+}
+header {
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.25);
+    text-align: center;
+}
+.header_logo {
+    font-family: Shrikhand, "cursive";
+}
+.MenuAccueil {
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.MenuAccueil p {
+    text-align: center;
+}
+.reservation_local {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f3f3f3;
+    font-size: 1.2em;
+}
+.reservation_local--fas {
+    display: flex;
+    justify-content: center;
+    padding-right: 1rem;
+    font-size: 1.2em;
+}
+.reservation_local span {
+    padding-right: 2.5rem;
+}
+.btn {
+    border: 0;
+    border-radius: 1.5rem;
+    padding: .75rem 1rem;
+    color: white;
+    background-color:#686868;
+    background-image: linear-gradient(0deg, rgba(147,86,220,.9),rgba(255,121,218,.9));
+    box-shadow: 0.25rem 0.25rem 10px rgba(0,0,0,.25);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+.FonctionTitre {
+    padding: 1rem;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+.Fonction_Block {
+    display: flex;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f6f6f6;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
+    border-radius: 2rem;
+}
+.Fonction_Block--numero {
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.Fonction_Block span {
+    margin-left: -2rem;
+}
+.Fonction_Block--icone {
+    padding: 0.2rem 1.2rem 0 1.2rem;
+}
+.Fonction_Block--Titre {
+    padding: 0.2rem 1.5rem 0 0.5rem;
+}
+.Fonction_Block--Titre span {
+    padding: 0.2rem 0 0 2.8rem;
+}
+.Restaurants--Titre {
+    padding: 1rem;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.Restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color:#686868;   
+}
+.Restaurants_Carte {
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    margin: 0.5em;
+    text-decoration: none;
+}
+.Restaurants_Carte--tag {
+    
+}
+.Restaurants_Carte--img {
+    border-radius: 1.25em 1.25em 0 0;
+    object-fit: cover;
+    width: 241px;
+    height: 140px;
+    
+}
+.Restaurants_Carte--Texte {
+    
+}
+.Restaurants_Carte--Coeur {
+    display: flex;
+    align-items: center;
+}
+footer {
+    background-color: #353535;
+    padding: 1rem 0 1rem 0;
+}
+.footer_logo {
+    object-fit: cover;
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: Shrikhand, "cursive";
+    padding: 0.2rem 0 0 1rem;
+}
+.Footer_Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0.2rem 0 0 1rem;
+}
+.Footer_Mention {
+    padding: 0.2rem 0 0 1rem;
+}
