@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin-bottom: 4px;
+}
+
 h2 {
   color: black;
   font-weight: 900;
@@ -15,11 +19,17 @@ h2 {
 
 h3 {
   font-weight: 900;
+  font-size: 1.5rem;
 }
 
 h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
   margin: 0;
   color: white;
+  font-size: 1.1rem;
 }
 
 a {
@@ -28,6 +38,7 @@ a {
 
 p {
   color: black;
+  font-size: 1.4rem;
 }
 
 .fa-utensils {
@@ -40,28 +51,26 @@ p {
   padding-right: 0.3rem;
 }
 
-.fa-heart {
-  background-color: rgba(147, 86, 220, 0.9);
-  cursor: pointer;
-}
-.fa-heart:hover {
-  transform: scale(1.13);
-  background-color: rgba(255, 121, 218, 0.9);
-}
-
 header {
-  padding: 1rem;
+  padding: 0.5rem 0 0 0;
+  margin-bottom: 0;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
-.header_logo {
+#header_logo {
   font-family: Shrikhand, "cursive";
+  text-align: center;
+}
+
+.Header_logo {
+  font-family: Shrikland, "cursive";
+  text-align: center;
 }
 
 .MenuAccueil {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f3f2f2;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -72,23 +81,24 @@ header {
   text-align: center;
 }
 
-.reservation_local {
-  text-align: center;
+.reservation {
   width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #e9e9e9;
+}
+
+.reservation_local {
   padding: 1rem;
-  background-color: #f3f3f3;
   font-size: 1.2em;
 }
 
 .reservation_local--fas {
-  display: flex;
-  justify-content: center;
-  padding-right: 1rem;
   font-size: 1.2em;
 }
 
 .reservation_local span {
-  padding-right: 2.5rem;
+  padding-left: 0.5rem;
 }
 
 .btn {
@@ -113,7 +123,7 @@ header {
   font-size: 1.2rem;
 }
 
-.container {
+.container_Filtres {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -128,8 +138,13 @@ header {
   border-radius: 2rem;
 }
 
+.Fonction_Block:hover {
+  background-color: #e8c8f8;
+  transform: scale(1.03);
+}
+
 .Fonction_Block--numero {
-  background: #9356dc;
+  background: #c76dcf;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
@@ -168,8 +183,9 @@ header {
 }
 
 .container {
-  max-width: 1280px;
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -181,7 +197,6 @@ header {
   cursor: pointer;
   margin: 0.5em;
   position: relative;
-  text-decoration: none;
 }
 
 .Restaurants_Carte--tag {
@@ -194,17 +209,21 @@ header {
   right: 0.75rem;
 }
 
-.Restaurants_Carte--img {
+#Restaurants_Carte--img {
   border-radius: 1.25em 1.25em 0 0;
   object-fit: cover;
-  width: 241px;
+  width: 240px;
   height: 140px;
+}
+
+.Restaurants_Carte--img {
+  max-width: 100%;
+  height: auto;
 }
 
 .Restaurants_Carte--Texte {
   padding: 1rem;
   position: relative;
-  display: flex;
   align-items: center;
 }
 
@@ -212,9 +231,25 @@ header {
   flex: 1;
 }
 
-.Restaurants_Carte--Coeur {
+.fa-heart {
   display: flex;
-  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+.fa-heart:hover::after {
+  opacity: 1;
+}
+.fa-heart::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, #ce80d5 0%, #b847c2 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+.fa-heart {
+  display: flex;
 }
 
 footer {
@@ -239,6 +274,51 @@ footer {
 
 .Footer_Mention {
   padding: 0.2rem 0 0 1rem;
+}
+
+.Menu-block {
+  padding: 0px 30px 0px 10px;
+  margin: 15px;
+  box-shadow: 2px 2px 5px 2px #dddddd;
+  background-color: white;
+  border-radius: 15px;
+  animation: box-appear 2.5s;
+  overflow: hidden;
+}
+
+.Menu-block_suite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.Menu-block h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 15px 0px 0px;
+}
+
+.btn--commander {
+  display: block;
+  margin: 40px auto 70px;
+  padding: 15px 50px;
+}
+
+.main-section {
+  margin-top: -30px;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.Titre_Restaurant {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: black;
+  font-family: "Shrikhand";
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

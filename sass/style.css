@@ -1,0 +1,290 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+h2 {
+  color: black;
+  font-weight: 900;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 900;
+}
+
+h4 {
+  margin: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: black;
+}
+
+.fa-utensils {
+  color: white;
+  padding-right: 0.8rem;
+}
+
+.fa-hands-helping {
+  color: white;
+  padding-right: 0.3rem;
+}
+
+header {
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.header_logo {
+  font-family: Shrikhand, "cursive";
+}
+
+.MenuAccueil {
+  width: 100%;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.MenuAccueil p {
+  text-align: center;
+}
+
+.reservation_local {
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  font-size: 1.2em;
+}
+
+.reservation_local--fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1rem;
+  font-size: 1.2em;
+}
+
+.reservation_local span {
+  padding-right: 2.5rem;
+}
+
+.btn {
+  border: 0;
+  border-radius: 1.5rem;
+  padding: .75rem 1rem;
+  color: white;
+  background-color: #FF79DA;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(147, 86, 220, 0.9)), to(rgba(255, 121, 218, 0.9)));
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+
+.FonctionTitre {
+  padding: 1rem;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.container_Filtres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Fonction_Block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
+}
+
+.Fonction_Block--numero {
+  background: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.Fonction_Block span {
+  margin-left: -2rem;
+}
+
+.Fonction_Block--icone {
+  padding: 0.2rem 1.2rem 0 1.2rem;
+}
+
+.Fonction_Block--Titre {
+  padding: 0.2rem 1.5rem 0 0.5rem;
+}
+
+.Fonction_Block--Titre span {
+  padding: 0.2rem 0 0 2.8rem;
+}
+
+.Restaurants--Titre {
+  padding: 1rem;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.Restaurants {
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.Restaurants_Carte {
+  background-color: white;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  cursor: pointer;
+  margin: 0.5em;
+  position: relative;
+}
+
+.Restaurants_Carte--tag {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: .5rem;
+  border-radius: .125rem;
+  position: absolute;
+  top: 1rem;
+  right: .75rem;
+}
+
+.Restaurants_Carte--img {
+  border-radius: 1.25em 1.25em 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 240px;
+  height: 140px;
+}
+
+.Restaurants_Carte--Texte {
+  padding: 1rem;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Restaurants_Nom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Restaurants_Carte--Coeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fa-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer_logo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: Shrikhand, "cursive";
+  padding: 0.2rem 0 0 1rem;
+}
+
+.Footer_Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 0.2rem 0 0 1rem;
+}
+
+.Footer_Mention {
+  padding: 0.2rem 0 0 1rem;
+}
+/*# sourceMappingURL=style.css.map */
