@@ -1,0 +1,19 @@
+footer {
+    background-color: #353535;
+    padding: 1rem 0 1rem 0;
+}
+.footer__logo {
+    font-size: 0.9rem;
+    color: #fff;
+    font-family: Shrikhand, "cursive";
+    padding: 0.2rem 0 0 1rem;
+}
+.Footer__Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 0.2rem 0 0 1rem;
+}
+.Footer__Mention {
+    padding: 0.2rem 0 0 1rem;  
+}

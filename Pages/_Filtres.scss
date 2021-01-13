@@ -1,0 +1,39 @@
+.container__Filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+.Fonction__Block {
+    display: flex;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #f6f6f6;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
+    border-radius: 2rem;
+}
+.Fonction__Block:hover {
+    background-color:#e8c8f8;
+    transform: scale(1.03);
+}
+.Fonction__Block--numero {
+    background: #c76dcf;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.Fonction__Block span {
+    margin-left: -2rem;
+}
+.Fonction__Block--icone {
+    padding: 0.2rem 1.2rem 0 1.2rem;
+}
+.Fonction__Block--Titre {
+    padding: 0.2rem 1.5rem 0 0.5rem;
+}
+.Fonction__Block--Titre span {
+    padding: 0.2rem 0 0 1.6rem;
+}
