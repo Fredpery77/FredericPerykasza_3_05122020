@@ -38,8 +38,30 @@
     box-shadow: 2px 2px 5px 2px #dddddd;
     background-color: white;
     border-radius: 15px;
+    transition: all .5s ease 0s;
+    animation: 3s ease 1 normal forwards running déroulé;
+    opacity: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
     cursor: pointer;
     }
+    @keyframes déroulé {
+        0% {
+        transform: translateY(-10px);
+        opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .Menu-block:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    .Menu-block:nth-child(4) {
+        animation-delay: 1.0s;
+    }
+
 .Menu-block__suite {
     margin: 0;
     display: flex;
