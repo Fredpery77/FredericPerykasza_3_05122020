@@ -51,38 +51,10 @@
     position: relative;
     padding: 0;
     }
-    .coeur__Vide {
-        &:hover {
-        background-image: black;
-        animation-name: couleur;
-        animation-duration: 10s;
-    }
-}
-
-    @keyframes couleur {
-        from {
-            background-image: #ff79da;
-        }
-        25% {
-            background-image:  rgba(255,121,218,0.9);
-        }
-        50% {
-            background-image:  rgba(147,86,220,0.25);
-        }
-        75% {
-            background-image: rgba(180,90,180,0.6);
-        }
-        to {
-            background-image:rgba(180,90,180,0.6);
-        }
-    }
-.Coeur__Vide {
-    position: absolute;
-    padding-right: -30px;
-}
 .fa-heart {
     font-size: 1.5rem;
     padding-right: 20px;
+    cursor: pointer;
 }
 .Restaurants__Nom p {
     font-size: 0.9rem;
