@@ -5,15 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/305fd59af1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Accueil-ohmyfood</title>
+    <title>Accueil-ohmyfood</title><meta name="Title" content="Accueil-ohmyfood!"><meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne.Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d'attente dans les restaurants.">
+
 </head>
 
-<body>
+<body>     
+    <div class="chargement">
+
+
+    
+        <div class="loading">
+    
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            <div class="obj"></div>
+            
+        </div>
+        
+                  
+    </div>
+
     <header>
         <h1 id="header_logo">ohmyfood</h1>
     </header>
@@ -27,10 +47,10 @@
             </div>
             </div>
             </div>
-            <h3>Réservez le menu qui <br> vous convient</h3>
-            <p>Découvrez des restaurants d'exception,séléctionnés par nos soins.</p>
+            <h3 class="Titre">Réservez le menu qui vous convient</h3>
+            <p class="Soustitre">Découvrez des restaurants d'exception,sélectionnés par nos soins.</p>
             <a href="#Restaurants">
-            <button class="btn btn--commander">Explorer nos restaurants</button>
+            <button class="btn btn__commander">Explorer nos restaurants</button>
             </a>
         </section>
            
@@ -58,8 +78,8 @@
             </div>
 
         <section class="Restaurants">
-            <div class="container">
             <div class="Restaurants--Titre">Restaurants</div>
+            <div class="container">
             <a class="Carte1" href="lapalettedugoutmenu.html">
                 <div class="Restaurants__Carte">
                     <img class="Restaurants__Carte--img" src="images/img/jay.jpg" alt="la-palette-du-gout" />
@@ -68,7 +88,10 @@
                         <div class="Restaurants_Nom">
                         <h2><strong>La palette du goût</strong></h2>
                         <p>Ménilmontant</p></div>
-                        <div class="Restaurants__Carte--Coeur"><i class="far fa-heart fas fa-heart"></i></div>
+    
+                        <div class="Coeur">
+                            <i class="far fa-heart coeur__vide"></i>
+                        </div>
                     </div>
                 </div>
             </a>
@@ -94,7 +117,7 @@
                         <div class="Restaurants__Nom">
                         <h2><strong>A la française</strong></h2>
                         <p>Cité Rouge</p></div>
-                        <div class="Restaurants__Carte--Coeur"><i class="far fa-heart"></i></div>
+                        <div class="Coeur"><i class="far fa-heart"></i></div>
                     </div>
                 </div>
             </a>
@@ -132,7 +155,7 @@
         <a href="#">
             <h5>Mentions légales</h5>
         </a>
-        <a href="#">
+        <a href="mailto:contact@ohmyfood.com">
             <h5>Contact</h5>
         </a>
     </div>

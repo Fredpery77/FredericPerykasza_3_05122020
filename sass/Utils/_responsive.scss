@@ -1,0 +1,179 @@
+@media (max-width:400px) {
+    .Titre { 
+        width: 80%;
+    }
+}
+@media (min-width:321px) and (max-width: 375px ) {
+    .Restaurants__Carte--image {
+        max-width: 375px;
+    }
+    .btncommander {
+        margin: 30px 0 30px 100px;
+        padding: 15px 50px;
+    }
+}
+@media (min-width:376px) and (max-width: 425px ) {
+    .Restaurants__Carte--image {
+        max-width: 425px;
+    }
+    .btncommander {
+        margin: 30px 0 30px 120px;
+        padding: 15px 50px;
+    }
+}
+@media (min-width: 426px) and (max-width: 767px ) {
+    .Titre {
+        width: 100%;
+        text-align: center;
+    }
+    h5 {
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .Soustitre {
+        width: 100%;
+        text-align: center;
+    }
+    .Fonction__Block {
+        margin-bottom: 30px;
+    }
+    footer {
+        display: flex;
+    }
+    .Footer__Mention {
+        display: flex;
+    }
+    .footer__logo {
+        margin-bottom: 30px;
+    }
+    .Menu-block {
+        width: 50%;
+        margin: 20px 20px 20px 100px;
+    }
+    .btncommander {
+        margin: 30px 0 30px 120px;
+        padding: 15px 50px;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .Restaurants__Carte--image {
+        max-width: 768px;
+    }
+    p {
+        text-align: center;
+    }
+    .btncommander {
+        margin: 30px 0 30px 290px;
+        padding: 15px 50px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .Menu-liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Menu-type {
+        padding-left: 25px;
+    }
+    .Menu-block {
+        width: 100%;
+    }
+    .Restaurants__Carte--image {
+        max-width: 1024px;
+    }
+    .Titre {
+        width: 100%;
+        text-align: center;
+    }
+    h5 {
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .Soustitre {
+        width: 100%;
+        text-align: center;
+    }
+    .Restaurants {
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer__Mention {
+        display: flex;
+    }
+    .btncommander {
+        margin: 30px 0 30px 400px;
+        padding: 15px 50px;
+    }
+    }
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .Restaurants__Carte--image {
+        max-width: 1440px;
+    }
+    p {
+        text-align: center;
+    }
+    .Menu-liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Menu-type {
+        margin-left: 130px;
+    }
+    .Menu-block {
+        width: 100%;
+        margin-top: 40px;
+    }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer__Mention {
+    display: flex;
+}
+.btncommander {
+    margin: 30px 0 30px 650px;
+    padding: 15px 50px;
+}
+}
+@media (min-width: 2560px) and (max-width: 2799px) {
+.Restaurants__Carte--image {
+    max-width: 2560px;
+}
+p {
+    text-align: center;
+}
+.Menu-liste {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Menu-type {
+    margin-left: 410px;
+}
+.Menu-block {
+    width: 100%;
+    margin-top: 40px;
+}
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Footer__Mention {
+display: flex;
+}
+.btncommander {
+    margin: 30px 0 30px 1150px;
+    padding: 15px 50px;
+}
+}
+@media (min-width: 2800px) and (max-width: 3000px) {
+    .Restaurants__Carte--image {
+        max-width: 2800px;
+    }
+}
