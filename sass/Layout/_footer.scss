@@ -4,17 +4,19 @@ footer {
 }
 .footer__logo {
     font-size: 1.3rem;
-    color: #FFF;
+    color: rgb(247, 245, 245);
     font-family: Shrikhand, "cursive";
-    padding: 0.2rem 0 0 1rem;
-    object-fit: cover;
+    padding: 0.5rem 0 0 1rem;
 }
 .Footer__Menu {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding: 0.2rem 0 0 1rem;
+    padding: 0.5rem 0 0 1rem;
 }
 .Footer__Mention {
-    padding: 0.2rem 0 0 1rem;  
+    padding: 0.5rem 0 0 1rem; 
+}
+.Footer__Mail {
+    padding: 0.5rem 0 0 1rem;  
 }

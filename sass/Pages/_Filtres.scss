@@ -1,4 +1,5 @@
 .container__Filtres {
+    padding-bottom: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -14,9 +15,10 @@
 .Fonction__Block:hover {
     background-color:#e8c8f8;
     transform: scale(1.03);
+    color: #c76dcf;
 }
 .Fonction__Block--numero {
-    background: #c76dcf;
+    background: #9560c7;
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 100px;
@@ -31,8 +33,11 @@
 .Fonction__Block--icone {
     padding: 0.2rem 1.2rem 0 1.2rem;
 }
+.Fonction__Block--Titre:hover {
+    color: black;
+}
 .Fonction__Block--Titre {
-    padding: 0.2rem 1.5rem 0 0.5rem;
+    padding: 0.2rem 1.5rem 0 0;
 }
 .Fonction__Block--Titre span {
     padding: 0.2rem 0 0 1.6rem;

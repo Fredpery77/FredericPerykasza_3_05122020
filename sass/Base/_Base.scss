@@ -6,27 +6,28 @@ body {
     margin: 0;
 }
 h1 {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     font-family: Shrikhand, "cursive";
+    font-size: 1.7em;
+
 }
 h2 {
     color: black;
     font-weight: 900;
     margin: 0;
 }
-h3 {
-    font-weight: 900;
-    font-size: 1.5rem;
-}
+
 h4 {
     font-size: 0.8rem;
+    font-family: "Roboto";
     font-weight: 400;
     margin: 0;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
+    overflow: hidden;
 }
 h5 {
     margin: 0;
-    color: white;
+    color: rgb(223, 223, 223);
     font-size: 1.1rem;
 }
 a {
@@ -38,13 +39,19 @@ p {
     width: 80%;
 }
 .fa-utensils {
-    color: white;
+    color: rgb(223, 223, 223);
     padding-right: 0.8rem;
 }
 .fa-hands-helping {
-    color: white;
+    color: rgb(223, 223, 223);
     padding-right: 0.3rem;
 }
 .fa-arrow-left {
     color: black;
+    font-size: 1.2em;
 }
+.fa-map-marker-alt {
+    margin-right: 15px;
+}
+
+
