@@ -73,11 +73,6 @@
     margin: 10px 15px;
     overflow: hidden;
 }
-.Menu-block {
-    transform: scaleY(1);
-    animation-name: animationItem;
-    animation-duration: 2000ms;
-}
 
 .valid {
     width: 80px;
@@ -89,38 +84,28 @@
     align-items: center;
     justify-content: center;
     margin-right: -80px;
-    transition: margin-right 1400ms;
-    transition-duration: .5s;
+    transform: rotate(180deg);
+    transition-duration: .5s ;
 }
-.Menu-block  .Menu-block__animation {
+
+.Menu-block__animation {
     display: flex;
     align-items: flex-end;
 }
-
-
 .Menu-block :hover ~.Menu-block__animation{
         margin-right: 80px;
         transition: margin-right 1400ms;
-        transition-duration: .5s;
-}
-
-.Menu-block .valid i {
-    transform: rotate(-180deg);
-    transition: transform 800ms ease-in-out;
-}
-
-.Menu-block .valid .fa-check-circle {
-    &:hover {
-        transform: rotate(-90deg);
-        transition: transform 800ms ease-in-out;
-    }
+} 
+.valid:hover  ~i{
+    transform: rotate(90deg);
+    transition: transform 330ms ease-in-out;
 } 
 .prix {
    padding: 10px;
    font-weight: bold;
 }
 .Menu-block__plats h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Roboto";
     font-weight: 600;
     color: black;

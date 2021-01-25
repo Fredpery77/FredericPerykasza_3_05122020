@@ -21,7 +21,7 @@ h2 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: "Roboto";
   font-weight: 400;
   margin: 0;
@@ -141,7 +141,7 @@ footer {
   width: 100vw;
   height: 100vh;
   z-index: 10000;
-  background: rgba(255, 255, 255, 0.7);
+  background: white;
   animation: chargement 3.8s forwards;
 }
 
@@ -178,7 +178,7 @@ footer {
     height: 0;
   }
   50% {
-    height: 40px;
+    height: 50px;
   }
   100% {
     height: 0;
@@ -240,9 +240,8 @@ footer {
 }
 
 .Fonction__Block:hover {
-  background-color: #e8c8f8;
+  background-color: #f5daf3;
   transform: scale(1.03);
-  color: #c76dcf;
 }
 
 .Fonction__Block--numero {
@@ -262,6 +261,11 @@ footer {
 
 .Fonction__Block--icone {
   padding: 0.2rem 1.2rem 0 1.2rem;
+}
+
+.Fonction__Block--icone:hover {
+  color: #c76dcf;
+  transform: scale(1.03);
 }
 
 .Fonction__Block--Titre:hover {
@@ -486,12 +490,6 @@ footer {
   overflow: hidden;
 }
 
-.Menu-block {
-  transform: scaleY(1);
-  animation-name: animationItem;
-  animation-duration: 2000ms;
-}
-
 .valid {
   width: 80px;
   height: 60px;
@@ -502,11 +500,11 @@ footer {
   align-items: center;
   justify-content: center;
   margin-right: -80px;
-  transition: margin-right 1400ms;
+  transform: rotate(180deg);
   transition-duration: 0.5s;
 }
 
-.Menu-block .Menu-block__animation {
+.Menu-block__animation {
   display: flex;
   align-items: flex-end;
 }
@@ -514,17 +512,11 @@ footer {
 .Menu-block :hover ~ .Menu-block__animation {
   margin-right: 80px;
   transition: margin-right 1400ms;
-  transition-duration: 0.5s;
 }
 
-.Menu-block .valid i {
-  transform: rotate(-180deg);
-  transition: transform 800ms ease-in-out;
-}
-
-.Menu-block .valid .fa-check-circle:hover {
-  transform: rotate(-90deg);
-  transition: transform 800ms ease-in-out;
+.valid:hover ~ i {
+  transform: rotate(90deg);
+  transition: transform 330ms ease-in-out;
 }
 
 .prix {
@@ -533,7 +525,7 @@ footer {
 }
 
 .Menu-block__plats h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Roboto";
   font-weight: 600;
   color: black;

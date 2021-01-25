@@ -13,9 +13,8 @@
     border-radius: 2rem;
 }
 .Fonction__Block:hover {
-    background-color:#e8c8f8;
+    background-color:#f5daf3;
     transform: scale(1.03);
-    color: #c76dcf;
 }
 .Fonction__Block--numero {
     background: #9560c7;
@@ -32,6 +31,10 @@
 }
 .Fonction__Block--icone {
     padding: 0.2rem 1.2rem 0 1.2rem;
+}
+.Fonction__Block--icone:hover {
+    color:#c76dcf;
+    transform: scale(1.03);
 }
 .Fonction__Block--Titre:hover {
     color: black;
