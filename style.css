@@ -634,8 +634,17 @@ footer {
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
+  .Restaurants__Carte {
+    margin: 2em;
+    justify-content: center;
+  }
+
   .Restaurants__Carte--image {
     max-width: 1024px;
+  }
+
+  .Restaurants--Titre {
+    padding: 0;
   }
 
   .Titre {
@@ -651,11 +660,6 @@ footer {
   .Soustitre {
     width: 100%;
     text-align: center;
-  }
-
-  .Restaurants {
-    display: flex;
-    justify-content: center;
   }
 
   footer {
