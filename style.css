@@ -43,6 +43,7 @@ p {
   color: black;
   padding: 0;
   width: 80%;
+  overflow: hidden;
 }
 
 .fa-utensils {
@@ -488,20 +489,22 @@ footer {
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.1);
   margin: 10px 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  cursor: pointer;
 }
 
-.Menu-block :hover ~ .valid {
-  transform: rotate(0deg);
-  transition: transform 330ms ease-in-out;
+/* .Menu-block__animation :hover ~.valid{
+
+} */
+.Menu-block__animation {
+  display: flex;
+  align-items: flex-end;
 }
 
 .Menu-block__animation :hover ~ .valid {
   margin-right: 80px;
   transition: margin-right 220ms;
+  transform: rotate(0deg);
+  transition: 0.5s;
 }
 
 .valid {
@@ -518,11 +521,6 @@ footer {
   transition-duration: 0.5s;
 }
 
-.Menu-block__animation {
-  display: flex;
-  align-items: flex-end;
-}
-
 .prix {
   padding: 10px;
   font-weight: bold;
@@ -536,6 +534,9 @@ footer {
   padding: 10px 0 5px 10px;
   text-align: start;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .Menu-type__titre {
