@@ -6,12 +6,14 @@
 body {
   width: 100%;
   margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 h1 {
   margin-bottom: 2px;
   font-family: Shrikhand, "cursive";
   font-size: 1.7em;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -21,12 +23,14 @@ h2 {
 }
 
 h4 {
-  font-size: 0.7rem;
+  font-size: 16px;
   font-family: "Roboto";
   font-weight: 400;
   margin: 0;
   padding: 0 0 10px 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 h5 {
@@ -69,7 +73,6 @@ p {
   border: 0;
   border-radius: 1.5rem;
   padding: 1rem 1rem;
-  margin: 30px 0 70px 30px;
   color: white;
   background-color: #FF79DA;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
@@ -82,8 +85,19 @@ p {
 }
 
 .btn-commander {
-  margin: 30px 0 70px 80px;
-  padding: 15px 45px;
+  border: 0;
+  border-radius: 1.5rem;
+  padding: 15px 50px;
+  margin: 30px 0 30px 75px;
+  color: white;
+  background-color: #FF79DA;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition-duration: 0.25s;
+}
+.btn-commander:hover {
+  transform: scale(1.13);
 }
 
 header {
@@ -243,7 +257,11 @@ footer {
 
 .Fonction__Block:hover {
   background-color: #f5daf3;
+  color: #c76dcf;
   transform: scale(1.03);
+}
+.Fonction__Block:hover:hover .Fonction__Block--Titre {
+  color: black;
 }
 
 .Fonction__Block--numero {
@@ -265,15 +283,9 @@ footer {
   padding: 0.2rem 1.2rem 0 1.2rem;
 }
 
-.Fonction__Block--icone:hover {
-  color: #c76dcf;
-  transform: scale(1.03);
-}
-
-.Fonction__Block--Titre:hover {
-  color: black;
-}
-
+/* .Fonction__Block--Titre:hover {
+    color: black;
+} */
 .Fonction__Block--Titre {
   padding: 0.2rem 1.5rem 0 0;
 }
@@ -414,7 +426,7 @@ footer {
 .header-Nav {
   position: absolute;
   color: black;
-  padding: 33px 0 0 30px;
+  padding: 29px 0 0 30px;
 }
 
 .Restaurants__Carte--image {
@@ -493,33 +505,13 @@ footer {
   overflow: hidden;
 }
 
-/* .Menu-block__animation :hover ~.valid{
-
-} */
-.Menu-block__animation {
-  display: flex;
-  align-items: flex-end;
-}
-
-.Menu-block__animation :hover ~ .valid {
-  margin-right: 80px;
-  transition: margin-right 220ms;
-  transform: rotate(0deg);
-  transition: 0.5s;
-}
-
-.valid {
-  width: 80px;
-  height: 60px;
-  background-color: #99E2D0;
+.fa-check-circle {
   color: white;
   font-size: 1.6em;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: -80px;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  justify-content: center;
 }
 
 .prix {
@@ -527,8 +519,14 @@ footer {
   font-weight: bold;
 }
 
+.Menu-block__plats {
+  flex-grow: 1;
+  width: 5em;
+  padding: 10px;
+}
+
 .Menu-block__plats h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Roboto";
   font-weight: 600;
   color: black;
@@ -542,12 +540,39 @@ footer {
 
 .Menu-type__titre {
   font-family: "Roboto";
-  font-size: 0.8rem;
+  font-size: 16px;
   padding: 20px 0 5px 0;
   border-bottom: #99e2d0 solid 4px;
   width: 10%;
   margin-left: 20px;
   font-weight: normal;
+}
+
+.box {
+  display: flex;
+  width: 80px;
+  height: 81px;
+  margin-right: -81px;
+  transition: all 1s;
+  background-color: #99e2d0;
+}
+
+.box .check {
+  margin: auto;
+  border-radius: 50%;
+  transition: transform 1s;
+  transform: rotate(0deg);
+}
+
+.Menu-block:hover > .box .check {
+  transform: rotate(180deg);
+}
+
+.Menu-block:hover > .box {
+  margin-right: 0;
+  width: 80px;
+  height: 81px;
+  transition-duration: 0.5s;
 }
 
 @media (max-width: 400px) {
@@ -560,7 +585,7 @@ footer {
     max-width: 375px;
   }
 
-  .btncommander {
+  .btn-commander {
     margin: 30px 0 30px 100px;
     padding: 15px 50px;
   }
@@ -570,8 +595,8 @@ footer {
     max-width: 425px;
   }
 
-  .btncommander {
-    margin: 30px 0 30px 120px;
+  .btn-commander {
+    margin: 30px 0 30px 130px;
     padding: 15px 50px;
   }
 }
@@ -608,34 +633,23 @@ footer {
     margin: 20px 20px 20px 100px;
   }
 
-  .btncommander {
+  .btn-commander {
     margin: 30px 0 30px 120px;
     padding: 15px 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .Restaurants__Carte--image {
-    max-width: 768px;
+    max-width: 1023px;
   }
 
   p {
     text-align: center;
   }
 
-  .btncommander {
+  .btn-commander {
     margin: 30px 0 30px 290px;
     padding: 15px 50px;
-  }
-
-  .footer__logo {
-    text-align: center;
-    padding-bottom: 0.7rem;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -645,7 +659,7 @@ footer {
   }
 
   .Restaurants__Carte--image {
-    max-width: 1024px;
+    max-width: 1439px;
   }
 
   .Restaurants--Titre {
@@ -677,14 +691,14 @@ footer {
     display: flex;
   }
 
-  .btncommander {
-    margin: 30px 0 30px 400px;
+  .btn-commander {
+    margin: 30px 0 30px 440px;
     padding: 15px 50px;
   }
 }
 @media (min-width: 1440px) and (max-width: 2559px) {
   .Restaurants__Carte--image {
-    max-width: 1440px;
+    max-width: 2559px;
   }
 
   p {
@@ -697,6 +711,54 @@ footer {
 
   .footer__logo {
     padding-bottom: 0.7rem;
+  }
+
+  .Menu-block__plats h3 {
+    font-size: 22px;
+  }
+
+  .fa-check-circle {
+    color: white;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg);
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    margin-right: -90px;
+    transition: all 1s;
+    background-color: #99e2d0;
+  }
+
+  .box .check {
+    margin: auto;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: rotate(0deg);
+  }
+
+  .Menu-block:hover > .box .check {
+    transform: rotate(180deg);
+  }
+
+  .Menu-block:hover > .box {
+    margin-right: 0;
+    width: 90px;
+    height: 90px;
+    transition-duration: 0.5s;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .prix {
+    font-size: 20px;
   }
 
   footer {
@@ -714,7 +776,7 @@ footer {
     justify-content: space-around;
   }
 
-  .btncommander {
+  .btn-commander {
     margin: 30px 0 30px 650px;
     padding: 15px 50px;
   }
@@ -743,7 +805,7 @@ footer {
     display: flex;
   }
 
-  .btncommander {
+  .btn-commander {
     margin: 30px 0 30px 1150px;
     padding: 15px 50px;
   }

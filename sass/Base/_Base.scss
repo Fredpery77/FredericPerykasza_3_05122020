@@ -4,11 +4,13 @@
 body {
     width: 100%;
     margin: 0;
+    font-family: "Roboto" , Arial , sans-serif;
 }
 h1 {
     margin-bottom: 2px;
     font-family: Shrikhand, "cursive";
     font-size: 1.7em;
+    padding-bottom: 10px;
 
 }
 h2 {
@@ -18,12 +20,14 @@ h2 {
 }
 
 h4 {
-    font-size: 0.7rem;
+    font-size: 16px;
     font-family: "Roboto";
     font-weight: 400;
     margin: 0;
     padding: 0 0 10px 10px;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 h5 {
     margin: 0;

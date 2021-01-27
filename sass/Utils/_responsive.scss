@@ -7,7 +7,7 @@
     .Restaurants__Carte--image {
         max-width: 375px;
     }
-    .btncommander {
+    .btn-commander {
         margin: 30px 0 30px 100px;
         padding: 15px 50px;
     }
@@ -16,8 +16,8 @@
     .Restaurants__Carte--image {
         max-width: 425px;
     }
-    .btncommander {
-        margin: 30px 0 30px 120px;
+    .btn-commander {
+        margin: 30px 0 30px 130px;
         padding: 15px 50px;
     }
 }
@@ -47,30 +47,21 @@
         width: 50%;
         margin: 20px 20px 20px 100px;
     }
-    .btncommander {
+    .btn-commander {
         margin: 30px 0 30px 120px;
         padding: 15px 50px;
     }
 }
 @media (min-width: 768px) and (max-width:1023px) {
     .Restaurants__Carte--image {
-        max-width: 768px;
+        max-width: 1023px;
     }
     p {
         text-align: center;
     }
-    .btncommander {
+    .btn-commander {
         margin: 30px 0 30px 290px;
         padding: 15px 50px;
-    }
-    .footer__logo {
-        text-align: center;
-        padding-bottom: 0.7rem;
-    }
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -80,7 +71,7 @@
         justify-content: center;
     }
     .Restaurants__Carte--image {
-        max-width: 1024px;
+        max-width: 1439px;
     }
     .Restaurants--Titre {
         padding: 0;
@@ -105,14 +96,14 @@
     .Footer__Mention {
         display: flex;
     }
-    .btncommander {
-        margin: 30px 0 30px 400px;
+    .btn-commander {
+        margin: 30px 0 30px 440px;
         padding: 15px 50px;
     }
     }
 @media (min-width: 1440px) and (max-width: 2559px) {
     .Restaurants__Carte--image {
-        max-width: 1440px;
+        max-width: 2559px;
     }
     p {
         text-align: center;
@@ -122,6 +113,47 @@
     }
     .footer__logo {
         padding-bottom: 0.7rem;
+    }
+    .Menu-block__plats h3 {
+        font-size: 22px;
+    }
+    .fa-check-circle {
+        color: white;
+        font-size: 1.6em;
+        display: flex;
+        align-items: center;
+        transform: rotate(180deg);
+        justify-content: center;
+      } 
+      .box {
+        display: flex;
+        width: 90px;
+        height: 90px;
+        margin-right: -90px;
+        transition: all 1s;
+        background-color: #99e2d0;
+    }
+    .box .check {
+        margin: auto;
+        border-radius: 50%;
+        transition: transform 1s;
+        transform: rotate(0deg);
+    }
+    .Menu-block:hover > .box .check {
+        transform: rotate(180deg);
+    
+    }
+    .Menu-block:hover > .box {
+        margin-right: 0;
+        width: 90px;
+        height: 90px;
+        transition-duration: .5s;
+    } 
+    h4 {
+        font-size: 20px;
+    }
+    .prix {
+        font-size: 20px;
     }
 footer {
     display: flex;
@@ -135,7 +167,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.btncommander {
+.btn-commander {
     margin: 30px 0 30px 650px;
     padding: 15px 50px;
 }
@@ -159,7 +191,7 @@ align-items: center;
 .Footer__Mention {
 display: flex;
 }
-.btncommander {
+.btn-commander {
     margin: 30px 0 30px 1150px;
     padding: 15px 50px;
 }

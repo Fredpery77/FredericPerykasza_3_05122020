@@ -5,7 +5,7 @@
 .header-Nav {
     position: absolute;
     color: black;
-    padding: 33px 0 0 30px;
+    padding: 29px 0 0 30px;
 }
 .Restaurants__Carte--image {
     max-width: 320px;
@@ -63,7 +63,7 @@
     .Menu-type:nth-child(4) {
         animation-delay: 1.0s;
     }
-.Menu-block {
+     .Menu-block {
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -73,39 +73,25 @@
     margin: 10px 15px;
     overflow: hidden;
 }
-/* .Menu-block__animation :hover ~.valid{
-   
-} */
-.Menu-block__animation {
-    display: flex;
-    align-items: flex-end;
-}
-
-.Menu-block__animation :hover ~.valid {
-    margin-right: 80px;
-    transition: margin-right 220ms; 
-    transform: rotate(0deg);
-    transition: 0.5s;
+ .fa-check-circle {
+  color: white;
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  transform: rotate(180deg);
+  justify-content: center;
 } 
-.valid {
-    width: 80px;
-    height: 60px;
-    background-color: #99E2D0;
-    color: white;
-    font-size: 1.6em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: -80px;
-    transform: rotate(180deg);
-    transition-duration: 0.5s ; 
-}
 .prix {
    padding: 10px;
    font-weight: bold;
 }
+.Menu-block__plats {
+    flex-grow: 1;
+    width: 5em;
+    padding: 10px;
+}
 .Menu-block__plats h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Roboto";
     font-weight: 600;
     color: black;
@@ -118,11 +104,34 @@
 }
 .Menu-type__titre {
     font-family:  "Roboto";
-    font-size: 0.8rem;
+    font-size: 16px;
     padding: 20px 0 5px 0;
     border-bottom: #99e2d0 solid 4px;
     width: 10%;
     margin-left: 20px;
     font-weight: normal;
 }
+.box {
+    display: flex;
+    width: 80px;
+    height: 81px;
+    margin-right: -81px;
+    transition: all 1s;
+    background-color: #99e2d0;
+}
+.box .check {
+    margin: auto;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: rotate(0deg);
+}
+.Menu-block:hover > .box .check {
+    transform: rotate(180deg);
 
+}
+.Menu-block:hover > .box {
+    margin-right: 0;
+    width: 80px;
+    height: 81px;
+    transition-duration: .5s;
+} 
