@@ -526,7 +526,7 @@ footer {
 }
 
 .Menu-block__plats h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto";
   font-weight: 600;
   color: black;
@@ -551,8 +551,8 @@ footer {
 .box {
   display: flex;
   width: 80px;
-  height: 81px;
-  margin-right: -81px;
+  height: 84px;
+  margin-right: -84px;
   transition: all 1s;
   background-color: #99e2d0;
 }
@@ -571,7 +571,7 @@ footer {
 .Menu-block:hover > .box {
   margin-right: 0;
   width: 80px;
-  height: 81px;
+  height: 84px;
   transition-duration: 0.5s;
 }
 
@@ -601,6 +601,10 @@ footer {
   }
 }
 @media (min-width: 426px) and (max-width: 767px) {
+  .Restaurants__Carte--image {
+    max-width: 767px;
+  }
+
   .Titre {
     width: 100%;
     text-align: center;

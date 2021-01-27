@@ -22,6 +22,9 @@
     }
 }
 @media (min-width: 426px) and (max-width: 767px ) {
+    .Restaurants__Carte--image {
+        max-width: 767px;
+    }
     .Titre {
         width: 100%;
         text-align: center;
