@@ -16,7 +16,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-h2 {
+h3 {
   color: black;
   font-weight: 900;
   margin: 0;
@@ -31,12 +31,6 @@ h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-h5 {
-  margin: 0;
-  color: #dfdfdf;
-  font-size: 1.1rem;
 }
 
 a {
@@ -116,6 +110,12 @@ header {
 footer {
   background-color: #353535;
   padding: 1rem 0 1rem 0;
+}
+
+footer a {
+  margin: 0;
+  color: #dfdfdf;
+  font-size: 1.1rem;
 }
 
 .footer__logo {
@@ -361,7 +361,7 @@ footer {
 
 .Restaurants__Carte--Texte {
   font-size: 0.8rem;
-  padding: 10px 0 0 15px;
+  padding: 10px 0 0 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -394,7 +394,7 @@ footer {
 }
 
 .Restaurants__Nom p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 3px;
   margin-bottom: 15px;
 }
@@ -619,7 +619,7 @@ footer {
     text-align: center;
   }
 
-  h5 {
+  footer a {
     padding-right: 10px;
     padding-top: 10px;
   }
@@ -656,10 +656,6 @@ footer {
     max-width: 1023px;
   }
 
-  p {
-    text-align: center;
-  }
-
   .btn-commander {
     margin: 30px 0 30px 290px;
     padding: 15px 50px;
@@ -684,9 +680,8 @@ footer {
     text-align: center;
   }
 
-  h5 {
+  footer a {
     padding-right: 10px;
-    padding-top: 10px;
   }
 
   .Soustitre {
@@ -714,16 +709,8 @@ footer {
     max-width: 2559px;
   }
 
-  p {
-    text-align: center;
-  }
-
   .Menu-block {
     margin-top: 40px;
-  }
-
-  .footer__logo {
-    padding-bottom: 0.7rem;
   }
 
   .Menu-block__plats h3 {

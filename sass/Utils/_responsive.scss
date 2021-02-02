@@ -29,7 +29,7 @@
         width: 100%;
         text-align: center;
     }
-    h5 {
+    footer a {
         padding-right: 10px;
         padding-top: 10px;
     }
@@ -59,9 +59,6 @@
     .Restaurants__Carte--image {
         max-width: 1023px;
     }
-    p {
-        text-align: center;
-    }
     .btn-commander {
         margin: 30px 0 30px 290px;
         padding: 15px 50px;
@@ -83,9 +80,8 @@
         width: 100%;
         text-align: center;
     }
-    h5 {
+    footer a {
         padding-right: 10px;
-        padding-top: 10px;
     }
     .Soustitre {
         width: 100%;
@@ -108,14 +104,8 @@
     .Restaurants__Carte--image {
         max-width: 2559px;
     }
-    p {
-        text-align: center;
-    }
     .Menu-block {
         margin-top: 40px;
-    }
-    .footer__logo {
-        padding-bottom: 0.7rem;
     }
     .Menu-block__plats h3 {
         font-size: 22px;
